@@ -1,5 +1,5 @@
 {
-  "range": "'Form Responses 1'!A1:R112",
+  "range": "'Form Responses 1'!A1:R113",
   "majorDimension": "ROWS",
   "values": [
     [
@@ -129,20 +129,6 @@
       "Zena"
     ],
     [
-      "8/8/2017 18:34:00",
-      "Yes",
-      "Spotify",
-      "https://open.spotify.com/track/6iXBQXYVSMSY7LsZ7lj161?si=HIdKIFQm",
-      "Poop",
-      "Poop",
-      "Poop",
-      "0",
-      "",
-      "",
-      "",
-      "Poop"
-    ],
-    [
       "8/8/2017 18:40:06",
       "Yes",
       "Spotify",
@@ -155,6 +141,48 @@
       "35",
       "Like you're on a tropical island ",
       "Zena"
+    ],
+    [
+      "8/11/2017 12:57:46",
+      "Yes",
+      "Google Play Music",
+      "https://play.google.com/music/m/Bct53ug7icahucjfbs5yoiqevdm?t=Embers_-_Throwing_Snow",
+      "Embers",
+      "Throwing Snow",
+      "Electronic, Unsure",
+      "2017",
+      "",
+      "60",
+      "I have never heard it.",
+      "Jersh Sperzles"
+    ],
+    [
+      "8/17/2017 16:19:03",
+      "Yes",
+      "Spotify",
+      "https://open.spotify.com/album/0tUJcqDuXHNkaPKLN0lQhT?si=WcpGz2Im",
+      "Space Is Only Noise",
+      "Nicolas Jaar",
+      "Experimental",
+      "2011",
+      "Circus Company",
+      "42",
+      "",
+      "Chris E"
+    ],
+    [
+      "8/17/2017 19:07:52",
+      "Yes",
+      "Spotify",
+      "https://open.spotify.com/album/7Ih98kmIPJCsXcgrikcmoq?si=v8f7J0MH",
+      "Juicy Fruit",
+      "KRAAK & SMAAK",
+      "Dance/Electronic",
+      "2016",
+      "Jalepeno Records",
+      "56",
+      "",
+      "Chris E"
     ]
   ]
 }
