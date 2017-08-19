@@ -518,11 +518,6 @@ main {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-.card > a {
-  color: inherit;
-  text-decoration: none;
-}
-
 section {
   margin: 1rem;
 }
@@ -554,13 +549,27 @@ section {
   margin-bottom: 3rem;
 }
 
-.comments {
-}
-
 .label {
   color: #999;
   display: block;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
   margin: .5rem auto;
+}
+
+section > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.links {
+  margin-top: 2rem;
+}
+
+.logo {
+  height: 50px;
+}
+
+.logo-service {
+  margin-left: 2rem;
 }
