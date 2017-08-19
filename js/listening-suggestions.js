@@ -58,7 +58,7 @@
       } else {
         h += `<a href="https://www.google.com/search?q=${encodeURIComponent(x.title.toLowerCase())}+${encodeURIComponent(x.artist.toLowerCase())}">`;
       }
-      h += '<div class="art"><img src="images/artwork-not-available.jpg" /></div>';
+      // h += '<div class="art"><img src="images/artwork-not-available.jpg" /></div>';
       h += `<section><h2 class="title">${x.title}</h2><p class="artist">${x.artist}</p>`;
       if (x.year || x.publisher) {
         h += '<p class="published">';
