@@ -90,18 +90,18 @@
       }
       h += '<p class="links">';
       // h += '<span class="label">Links</span>';
-      h += `<a href="https://www.google.com/search?q=${encodeURIComponent(x.title.toLowerCase())}+${encodeURIComponent(x.artist.toLowerCase())}"><img class="logo" src="images/logos/google-g-glass.png" alt="Search on Google" /></a>`;
+      h += `<a href="https://www.google.com/search?q=${encodeURIComponent(x.title.toLowerCase())}+${encodeURIComponent(x.artist.toLowerCase())}"><img class="logo" src="images/logos/google-g-glass.png" title="Search on Google" alt="Search on Google" /></a>`;
       if (x.link) {
         if (x.service == 'Apple Music / iTunes') {
-          h += `<a href="${x.link}"><img class="logo logo-service" src="images/logos/apple-music.png" alt="Listen on Apple Music" /></a>`;
+          h += `<a href="${x.link}"><img class="logo logo-service" src="images/logos/apple-music.png" title="Listen on Apple Music" alt="Listen on Apple Music" /></a>`;
         } else if (x.service == 'Bandcamp') {
-          h += `<a href="${x.link}"><img class="logo logo-service" src="images/logos/bandcamp.png" alt="Listen on Bandcamp" /></a>`;
+          h += `<a href="${x.link}"><img class="logo logo-service" src="images/logos/bandcamp.png" title="Listen on Bandcamp" alt="Listen on Bandcamp" /></a>`;
         } else if (x.service == 'Google Play Music') {
-          h += `<a href="${x.link}"><img class="logo logo-service" src="images/logos/google-play-music.png" alt="Listen on Google Play Music" /></a>`;
+          h += `<a href="${x.link}"><img class="logo logo-service" src="images/logos/google-play-music.png" title="Listen on Google Play Music" alt="Listen on Google Play Music" /></a>`;
         } else if (x.service == 'SoundCloud') {
-          h += `<a href="${x.link}"><img class="logo logo-service" src="images/logos/soundcloud.png" alt="Listen on SoundCloud" /></a>`;
+          h += `<a href="${x.link}"><img class="logo logo-service" src="images/logos/soundcloud.png" title="Listen on SoundCloud" alt="Listen on SoundCloud" /></a>`;
         } else if (x.service == 'Spotify') {
-          h += `<a href="${x.link}"><img class="logo logo-service" src="images/logos/spotify.png" alt="Listen on Spotify" /></a>`;
+          h += `<a href="${x.link}"><img class="logo logo-service" src="images/logos/spotify.png" title="Listen on Spotify" alt="Listen on Spotify" /></a>`;
         }
       }
       h += '</p>';
