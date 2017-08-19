@@ -20,6 +20,7 @@
     mode: 'cors'
   };
 
+  // fetch('samples/responses-sample.json')
   fetch(`https://sheets.googleapis.com/v4/spreadsheets/1yxqhKjMc06UxGawWJ1N6-vXlRP0dBV0l0AMSUtrI8YY/values/Form%20Responses%201?key=${gApiKey}`, gAuthInit)
   .then(res => {
     if (res.ok) {
@@ -53,11 +54,6 @@
     for (var i = 0; i < arr.length; i++) {
       let x = arr[i];
       let h = '<div class="card">';
-      if (x.link) {
-        h += `<a href="${x.link}">`;
-      } else {
-        h += `<a href="https://www.google.com/search?q=${encodeURIComponent(x.title.toLowerCase())}+${encodeURIComponent(x.artist.toLowerCase())}">`;
-      }
       // h += '<div class="art"><img src="images/artwork-not-available.jpg" /></div>';
       h += `<section><h2 class="title">${x.title}</h2><p class="artist">${x.artist}</p>`;
       if (x.year || x.publisher) {
@@ -92,6 +88,23 @@
       if (x.contributor) {
         h += `<p class="contributor"><span class="label">Submitted by</span>${x.contributor}</p>`;
       }
+      h += '<p class="links">';
+      // h += '<span class="label">Links</span>';
+      h += `<a href="https://www.google.com/search?q=${encodeURIComponent(x.title.toLowerCase())}+${encodeURIComponent(x.artist.toLowerCase())}"><img class="logo" src="images/logos/google-g-glass.png" alt="Search on Google" /></a>`;
+      if (x.link) {
+        if (x.service == 'Apple Music / iTunes') {
+          h += `<a href="${x.link}"><img class="logo logo-service" src="images/logos/apple-music.png" alt="Listen on Apple Music" /></a>`;
+        } else if (x.service == 'Bandcamp') {
+          h += `<a href="${x.link}"><img class="logo logo-service" src="images/logos/bandcamp.png" alt="Listen on Bandcamp" /></a>`;
+        } else if (x.service == 'Google Play Music') {
+          h += `<a href="${x.link}"><img class="logo logo-service" src="images/logos/google-play-music.png" alt="Listen on Google Play Music" /></a>`;
+        } else if (x.service == 'SoundCloud') {
+          h += `<a href="${x.link}"><img class="logo logo-service" src="images/logos/soundcloud.png" alt="Listen on SoundCloud" /></a>`;
+        } else if (x.service == 'Spotify') {
+          h += `<a href="${x.link}"><img class="logo logo-service" src="images/logos/spotify.png" alt="Listen on Spotify" /></a>`;
+        }
+      }
+      h += '</p>';
       document.getElementById('content').insertAdjacentHTML('beforeend', h);
     }
   }
