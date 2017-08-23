@@ -500,7 +500,7 @@ h1 {
   }
 }
 
-@media screen and (min-width: 501px){
+@media screen and (min-width: 501px) {
   main {
     grid-template-columns: repeat(auto-fill, 300px);
     grid-gap: 2rem;
@@ -515,7 +515,7 @@ main {
 .card {
   background: #fff;
   border-radius: 4px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .card a {
@@ -545,9 +545,10 @@ section {
   margin-bottom: 2rem;
 }
 
-.published, .vitals {
+.published,
+.vitals {
   color: #999;
-  margin: .5rem auto;
+  margin: 0.5rem auto;
 }
 
 .vitals {
@@ -559,7 +560,7 @@ section {
   display: block;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
-  margin: .5rem auto;
+  margin: 0.5rem auto;
 }
 
 .links {
