@@ -105,6 +105,7 @@
       }
       h += `<a href="https://www.google.com/search?q=${encodeURIComponent(x.title.toLowerCase())}+${encodeURIComponent(x.artist.toLowerCase())}"><img class="logo" src="images/buttons/search-google.svg" title="Search using Google" alt="Search using Google" /></a>`;
       h += '</p>';
+      h += '</div>';
       document.getElementById('content').insertAdjacentHTML('beforeend', h);
     }
   }
