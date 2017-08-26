@@ -37,11 +37,12 @@
 
   function reOrg (arr3d, arrKeys) {
     let organized = [];
-    for (var i = 1, h = arr3d.length; i < h; i++) {
+    let h = arr3d.length;
+    for (let i = 1; i < h; i++) {
       organized.push({});
     }
-    for (var j = 0; j < arrKeys.length; j++) {
-      for (var k = 1; k < h; k++) {
+    for (let j = 0; j < arrKeys.length; j++) {
+      for (let k = 1; k < h; k++) {
         if (arr3d[k][j + 1]) {
           organized[k - 1][arrKeys[j]] = arr3d[k][j + 1].trim();
         }
@@ -51,7 +52,7 @@
   }
 
   function writeComponents (arr) {
-    for (var i = 0; i < arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
       let x = arr[i];
       let h = '<div class="card">';
       // h += '<div class="art"><img src="images/artwork-not-available.jpg" /></div>';
