@@ -108,7 +108,7 @@
       h += '</p>';
       h += '</section>';
       h += '</div>';
-      document.getElementById('content').insertAdjacentHTML('beforeend', h);
+      document.getElementById('content').insertAdjacentHTML('afterbegin', h);
     }
   }
 
